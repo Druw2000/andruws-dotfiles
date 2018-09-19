@@ -1,0 +1,63 @@
+#!/bin/bash
+# TODO
+## Make most options passable by user
+## Give link to wallpaper
+
+#curl -o /tmp/imgur.json -H "Referer: https://imgur.com/upload" -F "Filedata=@$wallpaper;type=image/jpeg" https://imgur.com/upload
+#url=$(echo -n https://imgur.com/; jq '.data .hash' /tmp/imgur.json | sed 's/"//g')
+#echo "Link to wallpaper: $url"
+
+cd $HOME
+root=".dotfiles/andruw"
+wallpaper="$HOME/pic/wallpaper/pepe_mountains.jpg"
+
+# all in home directory
+cp $wallpaper $root/wallpaper
+## Bash
+cp ~/.bashrc $root
+cp ~/.bash_profile $root
+cp ~/.bash_aliases $root
+## X11
+cp ~/.xinitrc $root
+cp ~/.Xresources $root
+cp ~/.xscreensaver $root
+## Vim
+cp ~/.vimrc $root
+## Conky
+cp ~/.conkyrc $root
+## Quake
+cp ~/.openarena/baseoa/q3config.cfg $root
+## NCMPCPP
+mkdir -p $root/.ncmpcpp
+cp --parents .ncmpcpp/config $root
+cp --parents .ncmpcpp/bindings $root
+
+# all in config directory
+## Compton
+cp --parents .config/compton.conf $root
+## i3
+mkdir -p $root/.config/i3
+cp --parents .config/i3/config $root
+## Polybar
+mkdir -p $root/.config/polybar
+cp --parents .config/polybar/launch.sh $root
+cp --parents .config/polybar/config $root
+cp --parents .config/polybar/scripts/battery.sh $root
+cp --parents .config/polybar/scripts/updates.sh $root
+## Openbox
+mkdir -p $root/.config/openbox
+cp --parents .config/openbox/autostart $root
+cp --parents .config/openbox/menu.xml $root
+cp --parents .config/openbox/rc.xml $root
+## Tint2
+mkdir -p $root/.config/tint2
+cp --parents .config/tint2/tint2rc $root
+## MPD
+mkdir -p $root/.config/mpd
+cp --parents .config/mpd/mpd.conf $root
+## Ranger
+mkdir -p $root/.config/ranger
+cp --parents .config/ranger/ranger.conf $root
+## Dunst
+mkdir -p $root/.config/dunst
+cp --parents .config/dunst/dunstrc $root
