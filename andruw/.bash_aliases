@@ -1,0 +1,5 @@
+alias ls="ls --color=auto"
+alias ll="ls -Alh"
+alias py="python"
+alias mpv="mpv --osd-fractions"
+alias player="ncmpcpp"

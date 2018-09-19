@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+<menu id="root-menu" label="Openbox">
+	<item label="URxvt">
+		<action name="Execute">
+			<execute>urxvt</execute>
+			</action>
+	</item>
+	<item label="Thunar">
+		<action name="Execute">
+			<execute>thunar</execute>
+		</action>
+	</item>
+	<item label="Sublime">
+		<action name="Execute">
+			<execute>sublime</execute>
+		</action>
+	</item>
+	<item label="Chromium">
+		<action name="Execute">
+			<execute>chromium</execute>
+		</action>
+	</item>
+</menu>
+</openbox_menu>
