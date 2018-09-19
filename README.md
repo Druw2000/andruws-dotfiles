@@ -1,2 +1,4 @@
 # andruws-dotfiles
-My dotfiles and a script to automatically copy them from a machine.
+My dotfiles.
+- My current [wallpaper](https://imgur.com/0ddIBTx)  
+- Script to copy current dotfiles to repo [generate-theme](https://pastebin.com/86H1q7iq)  
